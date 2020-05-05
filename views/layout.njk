@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>    
+
+    {% block head %}
+
+    <title>Cavalcante Odontologia e Estética</title>
+
+    {% endblock %}
+
+    <link rel="stylesheet" href="/styles.css">
+</head>
+
+<body>
+    <header>
+        <div class="links">
+            <a href="/">Sobre</a>
+            <a href="/portfolio">Vídeos</a>
+        </div>              
+    </header>
+
+    {% block content %}{% endblock %}
+    
+</body>
+
+
+</html>
+
+
+

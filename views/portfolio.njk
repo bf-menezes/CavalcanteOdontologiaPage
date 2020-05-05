@@ -1,0 +1,40 @@
+
+{% extends "layout.njk" %}
+
+
+{% block head %}
+
+<title>Portfolio - Cavalcante Odontologia e Estética</title>
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+{% endblock %}
+
+
+{% block content %}
+
+    <div id = "wrapper">
+        <h2>Dúvidas e Informações Úteis</h2>
+    </div>
+
+    <section class="videos">
+
+        {% for item in items %}            
+        <div class="video" id="{{item.id}}">
+            <div class="image_container">
+                <img src="https://instagram.fssa7-1.fna.fbcdn.net/v/t51.2885-15/sh0.08/e35/s640x640/87652267_299997927646117_5172699356538172540_n.jpg?_nc_ht=instagram.fssa7-1.fna.fbcdn.net&amp;_nc_cat=101&amp;_nc_ohc=tMtRRGP0kR0AX8ZklXI&amp;oh=f451110bed72a8190997416402c8b02b&amp;oe=5EA59C73" alt="Imagem Clareamento">
+            </div>
+            <div class="autor">
+                <p>{{item.autor}}</p>
+            </div>          
+        </div>
+        {% endfor %}
+
+    </section>
+
+    <script src="scripts.js"></script>
+   
+{% endblock %}
+
+
+
